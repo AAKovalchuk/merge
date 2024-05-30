@@ -1,11 +1,14 @@
-name: test
+name: First job
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+      - main
 jobs:
   build:
     runs-on: self-hosted
     steps:
-    - name: test 1
-      run: ls -alh 
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: ls all folders
+        run: ls -alh 
       
