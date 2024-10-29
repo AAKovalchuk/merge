@@ -1,9 +1,7 @@
 #!/usr/bin/python 
-
 import os
 import subprocess
 import re
-
 from rich.progress import Progress
 from rich.console import Console
 from rich.table import Table
